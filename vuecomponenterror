@@ -1,0 +1,18 @@
+const routes = [
+    {
+        path:'/example',
+        components : example
+    },
+    {
+        path:'/sample',
+        components : sample
+    }
+];
+
+const router = new VueRouter({
+    routes,
+});
+const app = new Vue({
+    el: '#app',
+    router,
+});
